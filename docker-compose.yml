@@ -1,0 +1,12 @@
+services:
+  modsec:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - modsec-net
+networks:
+  modsec-net:
+    #name: modsec-net
